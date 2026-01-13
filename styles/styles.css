@@ -163,3 +163,50 @@ margin pushes elements away, adds space on the outside of your element */
 /* two values means top-botom, left-right */
 margin: 15px 0;
 }
+
+/* you can target elements based on what they are inside */
+section img {
+
+    /* only scale one dimension of an image, width or height */
+    width: 20%;
+
+    float: left; 
+    /* floating an image will make the text sit next to it and wrap around it */
+
+    /* four value means clockwise top, right, bottom, left */
+    margin: 0 15px 15px 0;
+}
+
+nav a {
+color: azure;
+font-size: 1.2em;
+/* ems are relative to the font size of the parent, so 1.2 em = 120% larger */
+text-decoration: none;
+/* removes underlining, but screen readers use the underline to recognize links */
+}
+
+/* links have states, which are styled using pseudoclasses */
+nav a:hover {
+    color: crimson;
+}
+
+nav a:active {
+    color: blueviolet;
+}
+
+nav a:visited {
+    color: rgb(165, 226, 43); 
+}
+
+/* style an id using # */
+#current {
+    background-color: antiquewhite;
+    color: blueviolet;
+    font-weight: bold;
+}
+
+section {
+    margin: 20px;
+    border: 2px black solid;
+    padding: 15px;
+}
