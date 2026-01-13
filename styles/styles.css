@@ -136,3 +136,30 @@ table {
 }
 
 /* My CSS starts here */
+
+/****************************************************************************************************************
+                                        MAIN STYLES
+****************************************************************************************************************/
+
+/* hierarchy best practice: broader styling at the top, work down to more specific */
+
+/* these styles will apply to your whole page */
+body {
+max-width: 800px;
+background-color: cadetblue;
+
+/* to centre an element, use margin: 0 auto */
+margin: 0 auto;
+}
+
+/* this will apply to all h1 tags on your html page */
+h1 {
+font-size: 32px;
+font-weight: bold;
+color: darkgreen;
+/* the CSS box model contains three different areas: margin, border, and padding
+margin pushes elements away, adds space on the outside of your element */
+
+/* two values means top-botom, left-right */
+margin: 15px 0;
+}
